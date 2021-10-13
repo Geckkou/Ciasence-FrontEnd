@@ -9,6 +9,7 @@ import { FormularioProjetoComponent } from './formulario/formulario-projeto/form
 import { FormularioClienteComponent } from './formulario/formulario-cliente/formulario-cliente.component';
 import { FormularioProjetoProdutoComponent } from './formulario/formulario-projeto-produto/formulario-projeto-produto.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PaginationComponent } from './pagination/pagination.component';
     FormularioProjetoComponent,
     FormularioClienteComponent,
     FormularioProjetoProdutoComponent,
-    PaginationComponent
+    PaginationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule

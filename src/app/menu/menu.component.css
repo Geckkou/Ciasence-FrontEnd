@@ -60,53 +60,6 @@ input[type=text]:focus {
   width: 78%;
 }
 
-.ausentes {
-  float: left;
-  margin-top: 5rem;
-  margin-left: 2rem;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: gray;
-  width: 20%;
-  height: 20rem;
-  border-radius: 14px;
-}
-
-.aprovados {
-  float: left;
-  margin-top: 5rem;
-  padding-left: 15px;
-  background-color: gray;
-  width: 20%;
-  height: 20rem;
-  margin-left: 22rem;
-  border-radius: 14px;
-}
-
-.recusados {
-  float: right;
-  margin-top: 5rem;
-  padding-left: 15px;
-  background-color: gray;
-  width: 20%;
-  height: 20rem;
-  margin-left: 10rem;
-  margin-right: 2rem;
-  border-radius: 14px;
-}
-
-.ausentes h1.h1ausentes {
-  color: #eeff00bd;
-}
-
-.aprovados h1.h1aprovados {
-  color: #07f81bad;
-}
-
-.recusados h1.h1recusados {
-  color: #f80000bb;
-}
-
 .navbar {
   overflow: hidden;
   background-color: #333;
