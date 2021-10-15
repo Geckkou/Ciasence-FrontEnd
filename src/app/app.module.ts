@@ -10,6 +10,9 @@ import { FormularioClienteComponent } from './formulario/formulario-cliente/form
 import { FormularioProjetoProdutoComponent } from './formulario/formulario-projeto-produto/formulario-projeto-produto.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

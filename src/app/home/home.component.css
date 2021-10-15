@@ -29,14 +29,17 @@ p, a {
 }
 
 .column h1.h1ausentes {
+  padding-top: 12px;
   color: #e5ff00;
 }
 
 .column h1.h1aprovados {
+  padding-top: 12px;
   color: #07f81bad;
 }
 
 .column h1.h1recusados {
+  padding-top: 12px;
   color: #f80000bb;
 }
 
