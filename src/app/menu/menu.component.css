@@ -143,5 +143,13 @@ input[type=text]:focus {
 
 .logo {
   float: left;
+  margin-right: 8px;
+  padding-block: inherit;
+}
+
+.logoicon {
+  float: left;
   margin-right: 15px;
+  padding-block: inherit;
+  padding-top: 10px
 }
