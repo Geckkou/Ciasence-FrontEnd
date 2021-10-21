@@ -6,6 +6,14 @@ mat-tab-group {
   font-size: 1.5rem;
 }
 
+.layout{
+  padding: 2%;
+}
+
+.matchcard {
+  margin: 0.5%;
+}
+
 @media screen and (max-width: 768px) {
   .column {
     width: 100%;
