@@ -12,6 +12,7 @@ import { FormularioProjetoProdutoComponent } from './formulario/formulario-proje
 import { PaginationComponent } from './pagination/pagination.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatTabsModule} from '@angular/material/tabs';
@@ -30,6 +31,7 @@ import {MatCardModule} from '@angular/material/card';
     HomeComponent
   ],
   imports: [
+    HttpClientModule,
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
