@@ -1,5 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import Projeto from '../model/projeto.model';
 
 @Injectable({providedIn: 'root'})
 export class ProjetoService {
@@ -13,5 +15,9 @@ export class ProjetoService {
   };
 
   constructor(private http: HttpClient) { }
+
+  public postProjetos(projetos: any): Observable<Projeto> {
+    return this.http.post<any>(this.apiUrl, projetos, this.HttpOptions);
+  }
 
 }
