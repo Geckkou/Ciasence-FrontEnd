@@ -22,6 +22,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { DialogProdutosComponent } from './views/dialog-produtos/dialog-produtos.component';
 import { DialogProjetosComponent } from './views/dialog-projetos/dialog-projetos.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,11 @@ import { DialogProjetosComponent } from './views/dialog-projetos/dialog-projetos
     MatTabsModule,
     MatCardModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatNativeDateModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

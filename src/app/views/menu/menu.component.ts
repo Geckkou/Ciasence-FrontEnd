@@ -20,7 +20,7 @@ export class MenuComponent implements OnInit {
 
   addClientes(): void {
     const dialogRef = this.dialog.open(DialogClientesComponent, {
-      width: '250px',
+      minWidth: '400px',
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -30,7 +30,7 @@ export class MenuComponent implements OnInit {
 
   addProdutos(): void {
     const dialogRef = this.dialog.open(DialogProdutosComponent, {
-      width: '250px',
+      minWidth: '400px',
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -40,7 +40,7 @@ export class MenuComponent implements OnInit {
 
   addProjetos(): void {
     const dialogRef = this.dialog.open(DialogProjetosComponent, {
-      width: '250px'
+      minWidth: '400px',
     });
 
     dialogRef.afterClosed().subscribe(result => {

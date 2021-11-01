@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import Cliente from '../model/cliente.model';
 
 
@@ -20,5 +21,9 @@ export class ClienteService {
 
   public async getClientes(): Promise<Cliente[]> {
     return this.http.get<Cliente[]>('${this.apiUrl}/clientes').toPromise();
+  }
+
+  public postClientes(clientes: any): Observable<Cliente> {
+    return this.http.post<any>(this.apiUrl, clientes, this.HttpOptions);
   }
 }
