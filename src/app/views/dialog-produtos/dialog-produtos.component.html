@@ -1,4 +1,51 @@
-<h1 mat-dialog-title>Produtos</h1>
+<h1 mat-dialog-title>Cadastro</h1>
+<h1 mat-dialog-title>Novo Produto</h1>
+
+<div mat-dialog-content>
+  <form class="produtos-form" [formGroup]="produtoForm">
+    <mat-form-field class="produtos-full-width">
+      <mat-label>Código do Produto</mat-label>
+      <input matInput formControlName="codigo" name="codigo">
+    </mat-form-field>
+
+
+    <mat-form-field class="produtos-full-width">
+      <mat-label>Nome do Produto</mat-label>
+      <input matInput formControlName="nomenclatura" name="nomenclatura">
+    </mat-form-field>
+
+
+    <mat-form-field class="produtos-full-width">
+      <mat-label>Preço do Produto</mat-label>
+      <input matInput formControlName="preco" name="preco">
+    </mat-form-field>
+
+
+    <mat-form-field class="produtos-full-width">
+      <mat-label>Aplicação do Produto</mat-label>
+      <input matInput formControlName="aplicacao" name="aplicacao">
+    </mat-form-field>
+
+
+    <mat-form-field class="produtos-full-width">
+      <mat-label>Dosagem do Produto</mat-label>
+      <input matInput formControlName="dosagem" name="dosagem">
+    </mat-form-field>
+
+
+    <mat-form-field class="produtos-full-width">
+      <mat-label>Inspiração do Produto</mat-label>
+      <input matInput formControlName="inspiracao" name="inspiracao">
+    </mat-form-field>
+
+
+    <mat-form-field class="produtos-full-width">
+      <mat-label>Amostra</mat-label>
+      <input matInput formControlName="amostra" name="amostra">
+    </mat-form-field>
+  </form>
+</div>
 <div mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)= "createProduto()">Adicionar</button>
   <button mat-button (click) = "close()">Fechar</button>
 </div>
