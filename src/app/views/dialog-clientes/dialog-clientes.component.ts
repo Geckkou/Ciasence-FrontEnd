@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
+import { ClienteService } from 'src/app/shared/service/cliente.service';
 
 @Component({
   selector: 'app-dialog-clientes',
@@ -12,6 +13,7 @@ export class DialogClientesComponent implements OnInit {
   public clientesForm!: FormGroup;
 
   constructor(
+    private rest: ClienteService,
     private fb: FormBuilder,
     public dialogRef: MatDialogRef<DialogClientesComponent>
   ) { }
@@ -23,8 +25,15 @@ export class DialogClientesComponent implements OnInit {
     });
   }
 
+  cadastrarCliente() {
+    this.rest.postClientes(this.clientesForm.value).subscribe(result => {});
+    this.dialogRef.close();
+    this.clientesForm.reset();
+  }
+
   close():void {
     this.dialogRef.close();
+    this.clientesForm.reset();
   }
 
 }
