@@ -20,6 +20,8 @@ import {MatCardModule} from '@angular/material/card';
 import { DialogClientesComponent } from './views/dialog-clientes/dialog-clientes.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
+import { DialogProdutosComponent } from './views/dialog-produtos/dialog-produtos.component';
+import { DialogProjetosComponent } from './views/dialog-projetos/dialog-projetos.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {MatButtonModule} from '@angular/material/button';
     FormularioProjetoProdutoComponent,
     PaginationComponent,
     HomeComponent,
-    DialogClientesComponent
+    DialogClientesComponent,
+    DialogProdutosComponent,
+    DialogProjetosComponent
   ],
   imports: [
     HttpClientModule,

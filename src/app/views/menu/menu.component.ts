@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogClientesComponent } from '../dialog-clientes/dialog-clientes.component';
+import { DialogProdutosComponent } from '../dialog-produtos/dialog-produtos.component';
+import { DialogProjetosComponent } from '../dialog-projetos/dialog-projetos.component';
 
 @Component({
   selector: 'app-menu',
@@ -26,4 +28,23 @@ export class MenuComponent implements OnInit {
     });
   }
 
+  addProdutos(): void {
+    const dialogRef = this.dialog.open(DialogProdutosComponent, {
+      width: '250px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('Dialog Fechado')
+    });
+  }
+
+  addProjetos(): void {
+    const dialogRef = this.dialog.open(DialogProjetosComponent, {
+      width: '250px'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('Dialog Fechado')
+    });
+  }
 }
