@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Projeto</h1>
+<h1 mat-dialog-title>Novo Produto</h1>
+
+<div mat-dialog-content>
+  <form class="projeto-form" [formGroup]="projetoForm">
+    <mat-form-field class="projeto-full-width">
+      <mat-label>Id do projeto</mat-label>
+      <input matInput formControlName="idProjeto" name="idProjeto">
+    </mat-form-field>
+
+
+<mat-form-field class="projeto-form">
+  <mat-label>Código do produto</mat-label>
+  <input matInput formControlName="codigo" name="codigo">
+</mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary">Adicionar</button>
+  <button mat-button (click)="fechar()">Close</button>
+</div>

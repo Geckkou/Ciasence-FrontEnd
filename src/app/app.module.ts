@@ -27,6 +27,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatIconModule} from '@angular/material/icon';
+import { DialogProdutoProjetoComponent } from './views/dialog-produto-projeto/dialog-produto-projeto.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,8 @@ import {MatChipsModule} from '@angular/material/chips';
     HomeComponent,
     DialogClientesComponent,
     DialogProdutosComponent,
-    DialogProjetosComponent
+    DialogProjetosComponent,
+    DialogProdutoProjetoComponent
   ],
   imports: [
     HttpClientModule,
@@ -58,7 +61,8 @@ import {MatChipsModule} from '@angular/material/chips';
     ReactiveFormsModule,
     MatInputModule,
     MatSelectModule,
-    MatChipsModule
+    MatChipsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
