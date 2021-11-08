@@ -1,29 +1,118 @@
 <mat-tab-group mat-align-tabs="start" tabs>
+
   <mat-tab label="Pendentes">
     <div class="layout" fxLayout="row" fxLayoutAlign="start center">
       <div class="matchcard">
 
-        <mat-card class="card"
-          fxFlex="0 1 calc(33.3% - 11px)"
-          fxFlex.lt-md="0 1 calc(50% - 11px)"
-          fxFlex.lt-sm="100%">
-              <mat-card-header>
+        <mat-card class="card">
 
+          <mat-card-title>
+            <div class="row">
+            <p>
+              <span class="title-client">Nome Cliente</span>
+              <span fxFlex></span>
+              <mat-chip class="mat-chip-date">
+              <span>Data</span>
+            </mat-chip>
+            </p>
+          </div>
+        </mat-card-title>
+
+              <mat-card-header class="card-header">
+                <mat-card-subtitle> <b>projeto</b> </mat-card-subtitle>
+                <mat-card-subtitle> <b>ra</b> </mat-card-subtitle>
               </mat-card-header>
 
               <mat-card-content>
-                <p>
-                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                  A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                  bred for hunting.
+                <p class="observacoes">
+                  Observações
                 </p>
               </mat-card-content>
+
+              <mat-card-actions class="botao">
+                <button mat-raised-button color="primary">Ver produtos</button>
+              </mat-card-actions>
+
         </mat-card>
       </div>
     </div>
   </mat-tab>
 
 
-  <mat-tab label="Aprovados">Content 2</mat-tab>
-  <mat-tab label="Recusados">Content 3</mat-tab>
+  <mat-tab label="Aprovados">
+    <div class="layout" fxLayout="row" fxLayoutAlign="start center">
+      <div class="matchcard">
+
+        <mat-card class="card">
+
+          <mat-card-title>
+            <div class="row">
+            <p>
+              <span class="title-client">Nome Cliente</span>
+              <span fxFlex></span>
+              <mat-chip class="mat-chip-date">
+              <span>Data</span>
+            </mat-chip>
+            </p>
+          </div>
+        </mat-card-title>
+
+              <mat-card-header class="card-header">
+                <mat-card-subtitle> <b>projeto</b> </mat-card-subtitle>
+                <mat-card-subtitle> <b>ra</b> </mat-card-subtitle>
+              </mat-card-header>
+
+              <mat-card-content>
+                <p class="observacoes">
+                  Observações
+                </p>
+              </mat-card-content>
+
+              <mat-card-actions class="botao">
+                <button mat-raised-button color="primary">Ver produtos</button>
+              </mat-card-actions>
+
+        </mat-card>
+      </div>
+    </div>
+
+  </mat-tab>
+
+  <mat-tab label="Recusados">
+    <div class="layout" fxLayout="row" fxLayoutAlign="start center">
+      <div class="matchcard">
+
+        <mat-card class="card">
+
+          <mat-card-title>
+            <div class="row">
+            <p>
+              <span class="title-client">Nome Cliente</span>
+              <span fxFlex></span>
+              <mat-chip class="mat-chip-date">
+              <span>Data</span>
+            </mat-chip>
+            </p>
+          </div>
+        </mat-card-title>
+
+              <mat-card-header class="card-header">
+                <mat-card-subtitle> <b>projeto</b> </mat-card-subtitle>
+                <mat-card-subtitle> <b>ra</b> </mat-card-subtitle>
+              </mat-card-header>
+
+              <mat-card-content>
+                <p class="observacoes">
+                  Observações
+                </p>
+              </mat-card-content>
+
+              <mat-card-actions class="botao">
+                <button mat-raised-button color="primary">Ver produtos</button>
+              </mat-card-actions>
+
+        </mat-card>
+      </div>
+    </div>
+  </mat-tab>
 </mat-tab-group>
