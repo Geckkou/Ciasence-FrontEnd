@@ -13,7 +13,6 @@ mat-tab-group {
   padding-top: 15px;
   padding-left: 15px;
 
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +43,7 @@ mat-tab-group {
   width:  50rem;
   height: 15rem;
 
+  float: left;
   flex-direction: column;
   justify-content: space-between;
 
@@ -57,7 +57,7 @@ mat-tab-group {
 
 .mat-chip-date {
   background-color: #a003fa !important;
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
   float: right;
   margin-right: 15px;
   padding: 0.8%;
