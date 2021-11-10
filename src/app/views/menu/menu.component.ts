@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogClientesComponent } from '../dialog-clientes/dialog-clientes.component';
 import { DialogProdutosComponent } from '../dialog-produtos/dialog-produtos.component';
 import { DialogProjetosComponent } from '../dialog-projetos/dialog-projetos.component';
+import { DialogPtaxComponent } from '../dialog-ptax/dialog-ptax.component';
 
 @Component({
   selector: 'app-menu',
@@ -41,6 +42,16 @@ export class MenuComponent implements OnInit {
   addProjetos(): void {
     const dialogRef = this.dialog.open(DialogProjetosComponent, {
       minWidth: '400px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('Dialog Fechado')
+    });
+  }
+
+  alterarpTax(): void {
+    const dialogRef = this.dialog.open(DialogPtaxComponent, {
+      minWidth: '400px'
     });
 
     dialogRef.afterClosed().subscribe(result => {

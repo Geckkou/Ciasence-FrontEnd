@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './views/menu/menu.component';
-import { TablesComponent } from './tables/tables.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { HomeComponent } from './views/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,17 +24,18 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatIconModule} from '@angular/material/icon';
 import { DialogProdutoProjetoComponent } from './views/dialog-produto-projeto/dialog-produto-projeto.component';
+import { DialogPtaxComponent } from './views/dialog-ptax/dialog-ptax.component';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    TablesComponent,
     PaginationComponent,
     HomeComponent,
     DialogClientesComponent,
     DialogProdutosComponent,
     DialogProjetosComponent,
-    DialogProdutoProjetoComponent
+    DialogProdutoProjetoComponent,
+    DialogPtaxComponent
   ],
   imports: [
     HttpClientModule,

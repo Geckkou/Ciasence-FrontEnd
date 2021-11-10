@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>P-Tax</h1>
+<h1 mat-dialog-title>Alterar taxa</h1>
+
+  <div mat-dialog-content>
+    <form class="ptax-form" [formGroup]="ptaxForm">
+      <mat-form-field class="ptax-full-width">
+        <mat-label>Código do Produto</mat-label>
+        <input matInput formControlName="codigo" name="codigo">
+      </mat-form-field>
+
+      <mat-form-field class="ptax-full-width">
+        <mat-label>Taxa P-Tax</mat-label>
+        <input matInput type="number" formControlName="taxa" name="taxa">
+      </mat-form-field>
+
+      <mat-form-field class="ptax-full-width">
+        <mat-label>Frete</mat-label>
+        <input matInput type="number" formControlName="frete" name="frete">
+      </mat-form-field>
+    </form>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button color="primary" (click)="ptax()">Alterar</button>
+    <button mat-button (click)="fechar()">Fechar</button>
+  </div>

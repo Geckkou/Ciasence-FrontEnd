@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TablesComponent } from './tables.component';
+import { DialogPtaxComponent } from './dialog-ptax.component';
 
-describe('TablesComponent', () => {
-  let component: TablesComponent;
-  let fixture: ComponentFixture<TablesComponent>;
+describe('DialogPtaxComponent', () => {
+  let component: DialogPtaxComponent;
+  let fixture: ComponentFixture<DialogPtaxComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TablesComponent ]
+      declarations: [ DialogPtaxComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TablesComponent);
+    fixture = TestBed.createComponent(DialogPtaxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
