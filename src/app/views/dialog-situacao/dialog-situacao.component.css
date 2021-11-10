@@ -1,0 +1,14 @@
+.situacao-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.situacao-full-width {
+  width: 100%;
+}
+
+.aprovar {
+  background-color: green;
+  color: white;
+}

@@ -29,6 +29,7 @@ import {MatTableModule} from '@angular/material/table';
 import { TableClientesComponent } from './views/tables/table-clientes/table-clientes.component';
 import { TableProdutosComponent } from './views/tables/table-produtos/table-produtos.component';
 import {MatCommonModule} from '@angular/material/core';
+import { DialogSituacaoComponent } from './views/dialog-situacao/dialog-situacao.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import {MatCommonModule} from '@angular/material/core';
     DialogPtaxComponent,
     TableClientesComponent,
     TableProdutosComponent,
+    DialogSituacaoComponent,
   ],
   imports: [
     HttpClientModule,

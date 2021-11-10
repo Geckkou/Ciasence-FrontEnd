@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Projetos</h1>
+<h1 mat-dialog-title>Informar Situação</h1>
+
+  <div mat-dialog-content>
+    <form class="situacao-form" [formGroup]="situacaoForm">
+      <mat-form-field class="situacao-full-width">
+        <mat-label>Id do Projeto</mat-label>
+        <input matInput formControlName="codigo" name="codigo">
+      </mat-form-field>
+    </form>
+  </div>
+  <div mat-dialog-actions>
+    <button class="aprovar" mat-raised-button (click)="aprovar()">Aprovar</button>
+    <button mat-raised-button color="warn" (click)="recusar()">Recusar</button>
+    <button mat-button (click)="fechar()">Fechar</button>
+  </div>

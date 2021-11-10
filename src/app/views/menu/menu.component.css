@@ -130,7 +130,7 @@ input[type=text]:focus {
 }
 
 .navbar a.home {
-  background-color: #04AA6D;
+  background-color: #c90303;
   color: white;
 }
 
@@ -142,11 +142,5 @@ input[type=text]:focus {
   float: left;
   margin-right: 8px;
   padding-block: inherit;
-}
-
-.logoicon {
-  float: left;
-  margin-right: 15px;
-  padding-block: inherit;
-  padding-top: 10px
+  padding-top: 0
 }
