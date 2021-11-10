@@ -25,6 +25,11 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatIconModule} from '@angular/material/icon';
 import { DialogProdutoProjetoComponent } from './views/dialog-produto-projeto/dialog-produto-projeto.component';
 import { DialogPtaxComponent } from './views/dialog-ptax/dialog-ptax.component';
+import {MatTableModule} from '@angular/material/table';
+import { TableClientesComponent } from './views/tables/table-clientes/table-clientes.component';
+import { TableProdutosComponent } from './views/tables/table-produtos/table-produtos.component';
+import {MatCommonModule} from '@angular/material/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +40,9 @@ import { DialogPtaxComponent } from './views/dialog-ptax/dialog-ptax.component';
     DialogProdutosComponent,
     DialogProjetosComponent,
     DialogProdutoProjetoComponent,
-    DialogPtaxComponent
+    DialogPtaxComponent,
+    TableClientesComponent,
+    TableProdutosComponent,
   ],
   imports: [
     HttpClientModule,
@@ -54,7 +61,9 @@ import { DialogPtaxComponent } from './views/dialog-ptax/dialog-ptax.component';
     MatInputModule,
     MatSelectModule,
     MatChipsModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule,
+    MatCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
