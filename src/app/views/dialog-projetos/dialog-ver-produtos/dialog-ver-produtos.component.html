@@ -3,11 +3,11 @@
 
 <div mat-dialog-content>
 
-  <mat-list>
+  <mat-list class="list">
     <div mat-subheader>Produtos</div>
-    <mat-list-item *ngFor="let produto of produtos">
+    <mat-list-item class="atributos" *ngFor="let produto of produtos">
       <mat-icon mat-list-icon>scatter_plot</mat-icon>
-      <div class="atributos">
+      <div>
       <div mat-line>{{produto.nome}}</div>
       <div mat-line>ID: {{produto.idproduto}}</div>
       <div mat-line>Código: {{produto.codigo}}</div>
@@ -16,12 +16,12 @@
       <div mat-line>{{produto.dosagem}}%</div>
       <div mat-line>Inspiração: {{produto.inspiracao}} </div>
 
-      <div>
+
+      <div class="botao">
         <button mat-raised-button color="warn"> <mat-icon>delete</mat-icon> Deletar</button>
       </div>
-
     </div>
-      <mat-divider></mat-divider>
+      <mat-divider class="divider"></mat-divider>
     </mat-list-item>
 
 <div mat-dialog-actions>
