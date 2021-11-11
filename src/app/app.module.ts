@@ -23,14 +23,16 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatIconModule} from '@angular/material/icon';
-import { DialogProdutoProjetoComponent } from './views/dialog-produto-projeto/dialog-produto-projeto.component';
+import { DialogProdutoProjetoComponent } from './views/dialog-projetos/dialog-produto-projeto/dialog-produto-projeto.component';
 import { DialogPtaxComponent } from './views/dialog-ptax/dialog-ptax.component';
 import {MatTableModule} from '@angular/material/table';
 import { TableClientesComponent } from './views/tables/table-clientes/table-clientes.component';
 import { TableProdutosComponent } from './views/tables/table-produtos/table-produtos.component';
 import {MatCommonModule} from '@angular/material/core';
-import { DialogSituacaoComponent } from './views/dialog-situacao/dialog-situacao.component';
+import { DialogSituacaoComponent } from './views/dialog-projetos/dialog-situacao/dialog-situacao.component';
 import { DialogEditarProjetoComponent } from './views/dialog-projetos/dialog-editar-projeto/dialog-editar-projeto.component';
+import { DialogVerProdutosComponent } from './views/dialog-projetos/dialog-ver-produtos/dialog-ver-produtos.component';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,7 @@ import { DialogEditarProjetoComponent } from './views/dialog-projetos/dialog-edi
     TableProdutosComponent,
     DialogSituacaoComponent,
     DialogEditarProjetoComponent,
+    DialogVerProdutosComponent,
   ],
   imports: [
     HttpClientModule,
@@ -67,7 +70,8 @@ import { DialogEditarProjetoComponent } from './views/dialog-projetos/dialog-edi
     MatChipsModule,
     MatIconModule,
     MatTableModule,
-    MatCommonModule
+    MatCommonModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

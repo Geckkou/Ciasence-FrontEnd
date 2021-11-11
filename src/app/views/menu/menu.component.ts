@@ -4,7 +4,7 @@ import { DialogClientesComponent } from '../dialog-clientes/dialog-clientes.comp
 import { DialogProdutosComponent } from '../dialog-produtos/dialog-produtos.component';
 import { DialogProjetosComponent } from '../dialog-projetos/dialog-projetos.component';
 import { DialogPtaxComponent } from '../dialog-ptax/dialog-ptax.component';
-import { DialogSituacaoComponent } from '../dialog-situacao/dialog-situacao.component';
+import { DialogSituacaoComponent } from '../dialog-projetos/dialog-situacao/dialog-situacao.component';
 
 @Component({
   selector: 'app-menu',

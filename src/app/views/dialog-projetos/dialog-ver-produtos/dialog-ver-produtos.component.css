@@ -1,0 +1,14 @@
+.mat-list-icon {
+  color: rgba(120, 2, 255, 0.993);
+  margin-right: 15px;
+}
+
+.atributos {
+  width: 100%;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 100;
+
+  min-width: 150px;
+  max-width: 500px;
+}

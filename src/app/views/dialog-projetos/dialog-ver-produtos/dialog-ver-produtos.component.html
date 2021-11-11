@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Projetos</h1>
+<h1 mat-dialog-title>Vizualizar Produtos</h1>
+
+<div mat-dialog-content>
+
+  <mat-list>
+    <div mat-subheader>Produtos</div>
+    <mat-list-item *ngFor="let produto of produtos">
+      <mat-icon mat-list-icon>scatter_plot</mat-icon>
+      <div class="atributos">
+      <div mat-line>{{produto.nome}}</div>
+      <div mat-line>ID: {{produto.idproduto}}</div>
+      <div mat-line>Código: {{produto.codigo}}</div>
+      <div mat-line>R$ {{produto.preco}}</div>
+      <div mat-line>Aplicação: {{produto.aplicacao}}</div>
+      <div mat-line>{{produto.dosagem}}%</div>
+      <div mat-line>Inspiração: {{produto.inspiracao}} </div>
+
+      <div>
+        <button mat-raised-button color="warn"> <mat-icon>delete</mat-icon> Deletar</button>
+      </div>
+
+    </div>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="fechar()">Fechar</button>
+</div>
