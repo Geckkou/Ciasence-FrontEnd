@@ -30,6 +30,7 @@ import { TableClientesComponent } from './views/tables/table-clientes/table-clie
 import { TableProdutosComponent } from './views/tables/table-produtos/table-produtos.component';
 import {MatCommonModule} from '@angular/material/core';
 import { DialogSituacaoComponent } from './views/dialog-situacao/dialog-situacao.component';
+import { DialogEditarProjetoComponent } from './views/dialog-projetos/dialog-editar-projeto/dialog-editar-projeto.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { DialogSituacaoComponent } from './views/dialog-situacao/dialog-situacao
     TableClientesComponent,
     TableProdutosComponent,
     DialogSituacaoComponent,
+    DialogEditarProjetoComponent,
   ],
   imports: [
     HttpClientModule,

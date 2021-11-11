@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>Projetos</h1>
+<h1 mat-dialog-title>Atualizar Projeto</h1>
+
+<div mat-dialog-content>
+  <form class="projetos-form" [formGroup]="editarForm">
+    <mat-form-field class="projetos-full-width">
+      <mat-label>Id do Cliente</mat-label>
+      <input matInput formControlName="cliente" name="cliente">
+    </mat-form-field>
+
+    <mat-form-field class="projetos-full-width">
+      <mat-label>Observações</mat-label>
+      <textarea matInput formControlName="observacoes" name="observacoes">
+      </textarea>
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)= "atualizarProjeto()">Atualizar</button>
+  <button mat-button (click)= "close()">Fechar</button>
+</div>
