@@ -83,8 +83,8 @@ export class MenuComponent implements OnInit {
   }
 
   viewProdutos(): void {
-    const dialogRef = this.dialog.open(DialogTableProdutosComponent, {
-      minWidth: '400px'
+    const dialogRef = this.dialog.open(DialogTableProdutosComponent,  {
+      minWidth: '1000px',
     });
 
     dialogRef.afterClosed().subscribe(result => {
