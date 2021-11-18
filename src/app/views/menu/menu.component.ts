@@ -5,6 +5,7 @@ import { DialogProdutosComponent } from '../dialog-produtos/dialog-produtos.comp
 import { DialogProjetosComponent } from '../dialog-projetos/dialog-projetos.component';
 import { DialogPtaxComponent } from '../dialog-ptax/dialog-ptax.component';
 import { DialogSituacaoComponent } from '../dialog-projetos/dialog-situacao/dialog-situacao.component';
+import { DialogTableClientesComponent } from '../dialog-table-clientes/dialog-table-clientes.component';
 
 @Component({
   selector: 'app-menu',
@@ -66,6 +67,16 @@ export class MenuComponent implements OnInit {
     });
 
     dialofRef.afterClosed().subscribe(result => {
+      console.log('Dialog Fechado')
+    });
+  }
+
+  viewClientes(): void {
+    const dialogRef = this.dialog.open(DialogTableClientesComponent, {
+      minWidth: '400px'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
       console.log('Dialog Fechado')
     });
   }

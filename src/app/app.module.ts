@@ -33,6 +33,7 @@ import { DialogSituacaoComponent } from './views/dialog-projetos/dialog-situacao
 import { DialogEditarProjetoComponent } from './views/dialog-projetos/dialog-editar-projeto/dialog-editar-projeto.component';
 import { DialogVerProdutosComponent } from './views/dialog-projetos/dialog-ver-produtos/dialog-ver-produtos.component';
 import {MatListModule} from '@angular/material/list';
+import { DialogTableClientesComponent } from './views/dialog-table-clientes/dialog-table-clientes.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import {MatListModule} from '@angular/material/list';
     DialogSituacaoComponent,
     DialogEditarProjetoComponent,
     DialogVerProdutosComponent,
+    DialogTableClientesComponent,
   ],
   imports: [
     HttpClientModule,
