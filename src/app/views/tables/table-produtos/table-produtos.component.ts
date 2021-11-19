@@ -90,7 +90,7 @@ const NUM: number[] = [
   styleUrls: ['./table-produtos.component.css']
 })
 export class TableProdutosComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'codigo', 'nomenclatura', 'preco', 'aplicacao', 'dosagem', 'inspiracao', 'amostra'];
+  displayedColumns: string[] = ['id', 'codigo', 'nomenclatura', 'preco', 'aplicacao', 'dosagem', 'inspiracao', 'amostra', 'editar', 'excluir'];
   dataSource: MatTableDataSource<UserData>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
