@@ -53,7 +53,7 @@ const RAZAOSOCIAL: string[] = [
   styleUrls: ['./table-clientes.component.css']
 })
 export class TableClientesComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'razaoSocial', 'fantasia'];
+  displayedColumns: string[] = ['id', 'razaoSocial', 'fantasia', 'editar', 'excluir'];
   dataSource: MatTableDataSource<UserData>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;

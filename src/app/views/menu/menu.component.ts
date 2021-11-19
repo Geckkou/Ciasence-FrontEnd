@@ -74,7 +74,7 @@ export class MenuComponent implements OnInit {
 
   viewClientes(): void {
     const dialogRef = this.dialog.open(DialogTableClientesComponent, {
-      minWidth: '400px'
+      minWidth: '800px'
     });
 
     dialogRef.afterClosed().subscribe(result => {
