@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Clientes</h1>
+<h1 mat-dialog-title>Atualizar Cliente</h1>
+
+<div mat-dialog-content>
+  <form class="clientes-form" [formGroup]= "clientesForm">
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Razão Social</mat-label>
+      <input matInput formControlName="razaoSocial" name="razaoSocial">
+    </mat-form-field>
+
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Nome Fantasia</mat-label>
+      <input matInput formControlName="fantasia" name="fantasia">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="editarCliente()">Atualizar</button>
+  <button mat-button (click)="close()">Fechar</button>
+
+</div>

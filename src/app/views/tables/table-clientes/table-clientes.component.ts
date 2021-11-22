@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { DialogEditarClientesComponent } from '../../dialog-clientes/dialog-editar-clientes/dialog-editar-clientes.component';
 
 
 export interface UserData {
@@ -59,7 +61,7 @@ export class TableClientesComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor() {
+  constructor( public dialog: MatDialog) {
     // Create 100 users
     const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
 
@@ -82,6 +84,17 @@ export class TableClientesComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
+
+
+  editarCliente(): void {
+    const dialofRef = this.dialog.open(DialogEditarClientesComponent, {
+      minWidth: '400px'
+    });
+
+    dialofRef.afterClosed().subscribe(result =>{
+      console.log('Dialog Fechado');
+    });
+  }
 }
 
 /** Builds and returns a new User. */
@@ -98,3 +111,5 @@ function createNewUser(id: number): UserData {
     fantasia: FANTASIA[Math.round(Math.random() * (FANTASIA.length - 1))],
   };
 }
+
+
