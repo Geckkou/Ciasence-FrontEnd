@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { DialogEditarProdutosComponent } from '../../dialog-produtos/dialog-editar-produtos/dialog-editar-produtos.component';
 
 export interface UserData {
   id: string;
@@ -96,7 +98,7 @@ export class TableProdutosComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
     // Create 100 users
     const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
 
@@ -119,6 +121,16 @@ export class TableProdutosComponent implements OnInit {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+
+  editarProdutos(): void {
+    const dialogRef = this.dialog.open(DialogEditarProdutosComponent, {
+      minWidth: '400px'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('Fechando dialog')
+    });
   }
 }
 
